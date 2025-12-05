@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://bihbtobpi4od5"]
+
+[ext_resource type="Script" uid="uid://cislnalle0cv7" path="res://Scripts/popup.gd" id="1_2nprw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2nprw"]
+bg_color = Color(7.508397e-06, 0.6594171, 0.84785926, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qml6d"]
+bg_color = Color(0, 0.713614, 0.43372735, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Popup" type="Panel"]
+offset_right = 256.0
+offset_bottom = 128.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2nprw")
+script = ExtResource("1_2nprw")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 17.0
+offset_right = 242.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 86.0
+offset_right = 245.0
+offset_bottom = 117.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_qml6d")

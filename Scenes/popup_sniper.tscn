@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmskxd836mr8"]
+
+[ext_resource type="Script" uid="uid://elo5mo3fdp23" path="res://Scripts/popup_sniper.gd" id="1_5rckx"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5rckx")
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 385.0
+offset_top = 21.0
+offset_right = 425.0
+offset_bottom = 44.0
+text = "Score : 0"
+
+[node name="TimerLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 682.0
+offset_top = 17.0
+offset_right = 722.0
+offset_bottom = 40.0
+text = "00:00"
+
+[node name="HealthLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 24.0
+offset_right = 190.0
+offset_bottom = 47.0
+text = "Vie : 0"
+
+[node name="SpawnTimer" type="Timer" parent="."]
+wait_time = 0.8
